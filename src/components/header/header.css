@@ -1,0 +1,39 @@
+.headerSection {
+  position: absolute;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.headerContainer {
+  background-color: #db2c1d;
+  padding: 3px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerLogo {
+  width:60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerLogo img {
+  width: 80%;
+  height: 80%;
+}
+
+.headerRight p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: white;
+  padding-right: 120px;
+  cursor: pointer;
+}
