@@ -1,0 +1,1 @@
+export const baseURL = 'https://test.backend.urbanoinfotech.com/api/v1';

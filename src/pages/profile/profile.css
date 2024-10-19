@@ -1,0 +1,100 @@
+.profile{
+  /* position: relative; */
+}
+.profile .headerSection {
+  position: unset;
+}
+
+.goBackBtn{
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  position: relative;
+}
+
+.ellipsBg {
+  position: absolute;
+  width: 100%;
+  /* height: 140%; */
+  z-index: -1;
+  top: -220px;
+}
+.decoartionImg {
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+}
+
+.profileContainer .formArea {
+  background-image: none;
+}
+
+.profileContainer .formContainer {
+  width: 70%;
+}
+.profileContainer h1 {
+  text-align: center;
+}
+.profileContainer .inputGroup input {
+  border: 1px solid black;
+}
+.avatarContainer {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  box-shadow: 4px 3px 5px rgb(185, 184, 184);
+  border-radius: 100%;
+  position: relative;
+}
+
+.avatarContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  border-radius: 100%;
+  object-position: center;
+}
+
+.editProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background-color: #181717;
+  z-index: 2;
+  padding: 2px;
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.editProfile .pen {
+  color: white;
+  font-size: 12px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttonGroup .button {
+  width: 48%;
+}
+
+.button.edit {
+  background-color: #3360c3;
+}
