@@ -39,6 +39,7 @@ const Login = () => {
         console.log(response);
         localStorage.setItem("accessToken", response?.data?.results?.access);
         localStorage.setItem("refreshToken", response?.data?.results?.refresh);
+        localStorage.setItem("userId",response?.data?.results?.user_id)
         navigate(`/profile/${response?.data?.results?.data?.user_id}`)
       } catch (error) {
         console.log(error.response.data.message);
