@@ -25,7 +25,6 @@ const Login = () => {
           contact_number: number,
         });
         setMsg(response.data.message);
-        console.log(response);
       } catch (error) {
         console.log(error.message);
       }
@@ -36,10 +35,9 @@ const Login = () => {
           otp: otp,
         });
         setMsg(response.data.message);
-        console.log(response);
         localStorage.setItem("accessToken", response?.data?.results?.access);
         localStorage.setItem("refreshToken", response?.data?.results?.refresh);
-        localStorage.setItem("userId",response?.data?.results?.user_id)
+        localStorage.setItem("userId",response?.data?.results?.data?.user_id)
         navigate(`/profile/${response?.data?.results?.data?.user_id}`)
       } catch (error) {
         console.log(error.response.data.message);

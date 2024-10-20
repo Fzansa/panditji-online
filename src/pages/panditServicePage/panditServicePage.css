@@ -1,0 +1,32 @@
+.panditServicePage .headerSection{
+    position: unset;
+}
+.cardInfo .pDesc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  display: box;
+}
+
+.moreInfo {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.headingInfo {
+  font-weight: 600;
+  color: #000000;
+  font-size: 13px;
+}
+
+@media (max-width: 425px) {
+  .panditServicePage .cardInfo .pDesc {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+}

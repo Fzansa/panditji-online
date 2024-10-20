@@ -1,4 +1,5 @@
 .headerSection {
+  top: 0px;
   position: absolute;
   padding: 12px;
   width: 100%;
@@ -36,4 +37,15 @@
   color: white;
   padding-right: 120px;
   cursor: pointer;
+}
+
+.logOutBtn{
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width:500px) {
+  .headerRight p {
+    padding-right:20px;
+}
 }

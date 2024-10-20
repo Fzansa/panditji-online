@@ -7,6 +7,8 @@ import PublicRoute from './components/PublicRoute';
 import CategoryPage from './pages/categoryPage/CategoryPage';
 import PageNot from './pages/notpage/PageNot';
 import ServicePage from './pages/servicePage/ServicePage';
+import SuccessMessage from './pages/successMessage/SuccessMessage';
+import PanditServicePage from './pages/panditServicePage/PanditServicePage';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path='profile/:id' element={<PrivateRoute><Profile /></PrivateRoute>} />
         <Route path='category' element={<PrivateRoute><CategoryPage /></PrivateRoute>} />
         <Route path='service' element={<PrivateRoute><ServicePage /></PrivateRoute>} />
+        <Route path='success' element={<PrivateRoute><SuccessMessage /></PrivateRoute>} />
+        <Route path='pandit-services' element={<PrivateRoute><PanditServicePage /></PrivateRoute>} />
         <Route path='*' element={<PageNot />} />
       </Routes>
     </BrowserRouter>

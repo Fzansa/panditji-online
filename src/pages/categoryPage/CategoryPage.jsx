@@ -41,7 +41,6 @@ const CategoryPage = () => {
       urls.forEach((u) => {
         urlMap[u.id] = u.imgUrl;
       });
-      // console.log(urlMap)
       setImageUrls(urlMap);
     };
 
@@ -66,7 +65,7 @@ const CategoryPage = () => {
 
   const handleSelectCat = (catId) => {
     if (!selectedCats.includes(catId)) {
-      setSelectedCats((prev) => [...prev, catId]);
+      setSelectedCats((prev) => [catId]);
     } else {
       setSelectedCats((prev) => prev.filter((item) => item !== catId));
     }
@@ -77,7 +76,6 @@ const CategoryPage = () => {
       <Header />
       <div className="categoryContainer">
         <h1>Categories of Pooja</h1>
-        {console.log(selectedCats)}
         <div className="poojaCardContainer">
           {category.map((item) => (
             <div
@@ -102,7 +100,7 @@ const CategoryPage = () => {
             </div>
           ))}
         </div>
-        <button className="button" onClick={handleNext}>
+        <button className="button large" onClick={handleNext}>
           Next
         </button>
       </div>

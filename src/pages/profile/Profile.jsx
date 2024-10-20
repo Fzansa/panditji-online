@@ -52,10 +52,6 @@ const Profile = () => {
           "Content-Type": file.type, // Set the correct content type
         },
       });
-      console.log("Image uploaded successfully!");
-      let getUrl = await axios.get(
-        `${baseURL}/get-presigned-url?url=${imageUrl}`
-      );
     } catch (error) {
       console.error("Error uploading image:", error.message);
     }
@@ -66,8 +62,6 @@ const Profile = () => {
       setOpen(!open);
       setReadOnly(true);
     } else {
-      console.log(imageUrl);
-      // Create a FormData object to send the image and form data
       const formData = new FormData();
       formData.append("first_name", fName);
       formData.append("last_name", lName);
@@ -86,6 +80,7 @@ const Profile = () => {
             },
           }
         );
+        navigate('/category')
       } catch (error) {
         console.error("Error uploading data:", error);
       }

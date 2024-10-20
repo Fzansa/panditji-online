@@ -1,0 +1,80 @@
+.servicePage .headerSection {
+  position: unset;
+}
+
+.servicePage h1 {
+  text-align: center;
+}
+
+.serviceForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.serviceForm input {
+  border: 1px solid #d8d8d8;
+  padding: 5px 12px;
+  text-align: center;
+  border-radius: 5px;
+  /* cursor:not-allowed; */
+  outline: none;
+}
+
+.servicePage .cardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.serviceEditBtn {
+  border: 1px solid red;
+  color: red;
+  background-color: white;
+  padding: 2.5px 12px;
+  border-radius: 12px;
+  /* cursor:not-allowed; */
+}
+
+.serviceEditBtn.selected {
+  cursor: pointer;
+}
+
+.disable {
+  outline: none;
+  cursor: not-allowed;
+}
+
+@media (max-width: 425px) {
+  .servicePage h1 {
+    font-size: 24px;
+  }
+  .goBackBtn {
+    top: 80px;
+  }
+  .poojaCard {
+    width: 99%;
+  }
+  .serviceForm input {
+    width: 100%;
+  }
+  .servicePage .cardInfo {
+    gap: 5px;
+  }
+  .serviceForm {
+    gap: 5px;
+  }
+  .serviceEditBtn {
+    font-size: 10px;
+  }
+  .showServiceNumber {
+    display: none;
+  }
+  .large.button {
+    width: 60%;
+    display: block;
+    margin: 24px auto;
+  }
+}

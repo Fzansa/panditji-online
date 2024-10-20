@@ -1,0 +1,72 @@
+.successPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+.leftSideEffect{
+    position: absolute;
+    width: 250px;
+    left:-60px;
+    top: 140px;
+    opacity: .3;
+    transform: rotate(90deg);
+    z-index:-1;
+
+}
+.rightSideEffect{
+    position: absolute;
+    right: -110px;
+    transform: rotate(-90deg);
+    width: 450px;
+    bottom:120px;
+    opacity: .7;
+    z-index:-1;
+}
+
+.checkIcon {
+  border: 1px solid #313642;
+  width:80px;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: #009951;
+  font-size: 55px;
+  border-radius: 100%;
+}
+
+.successPage h1 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 67.2px;
+  letter-spacing: -0.02em;
+  margin: 20px auto;
+}
+
+.goToBtn {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  letter-spacing: -0.02em;
+  border: 1px solid #313642;
+  padding: 6px 45px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+@media (max-width:450px) {
+  .successPage h1 {
+    font-size: 30px;
+    line-height: 45.2px;
+}
+}
